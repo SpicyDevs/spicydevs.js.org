@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Order Now - SpicyDevs</title>
+  <meta content="Order various types of digital services like websites, graphics designing and digital marketing etc." name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/spicydevs.png" rel="icon">
+  <link href="https://spicydevs.me/assets/img/spicydevs.png&#32;rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+ <style>
+     body {
+  font-family: "Roboto", sans-serif;
+  background-color: #fff;
+  line-height: 1.9;
+  color: #8c8c8c;
+  position: relative; }
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "Roboto", sans-serif;
+  color: #000; }
+
+a {
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease; }
+  a, a:hover {
+    text-decoration: none !important; }
+
+.text-black {
+  color: #000; }
+
+.content {
+  padding: 7rem 0; }
+
+.heading {
+  font-size: 2.5rem;
+  font-weight: 900; }
+
+.form-control {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding-left: 0;
+  padding-right: 0;
+  border-radius: 0;
+  background: none; }
+  .form-control:active, .form-control:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-color: #000; }
+
+.col-form-label {
+  color: #000;
+  font-size: 13px; }
+
+.btn, .form-control, .custom-select {
+  height: 45px;
+  border-radius: 0; }
+
+.custom-select {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding-left: 0;
+  padding-right: 0;
+  border-radius: 0; }
+  .custom-select:active, .custom-select:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-color: #000; }
+
+.btn {
+  border: none;
+  border-radius: 0;
+  font-size: 11px;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+  border-radius: 30px !important; }
+  .btn.btn-primary {
+    border-radius: 30px;
+    background: #fa65b1;
+    color: #fff;
+    -webkit-box-shadow: 0 15px 30px 0 rgba(239, 67, 57, 0.2);
+    box-shadow: 0 15px 30px 0 rgba(239, 67, 57, 0.2); }
+  .btn:hover {
+    color: #fff; }
+  .btn:active, .btn:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+
+.contact-wrap {
+  -webkit-box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.05);
+  border: 1px solid #efefef; }
+  .contact-wrap .col-form-label {
+    font-size: 14px;
+    color: #b3b3b3;
+    margin: 0 0 10px 0;
+    display: inline-block;
+    padding: 0; }
+  .contact-wrap .form, .contact-wrap .contact-info {
+    padding: 40px; }
+  .contact-wrap .contact-info {
+    color: rgba(255, 255, 255, 0.5); }
+    .contact-wrap .contact-info ul li {
+      margin-bottom: 15px;
+      color: rgba(255, 255, 255, 0.5); }
+      .contact-wrap .contact-info ul li .wrap-icon {
+        font-size: 20px;
+        color: #fff;
+        margin-top: 5px; }
+  .contact-wrap .form {
+    background: #fff; }
+    .contact-wrap .form h3 {
+      color: #000;
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 30px; }
+  .contact-wrap .contact-info {
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat; }
+    .contact-wrap .contact-info a {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0; }
+    @media (max-width: 1199.98px) {
+      .contact-wrap .contact-info {
+        height: 400px !important; } }
+    .contact-wrap .contact-info h3 {
+      color: #fff;
+      font-size: 20px;
+      margin-bottom: 30px; }
+
+label.error {
+  font-size: 12px;
+  color: red; }
+
+#message {
+  resize: vertical; }
+
+#form-message-warning, #form-message-success {
+  display: none; }
+
+#form-message-warning {
+  color: #B90B0B; }
+
+#form-message-success {
+  color: #55A44E;
+  font-size: 18px;
+  font-weight: bold; }
+
+.submitting {
+  float: left;
+  width: 100%;
+  padding: 10px 0;
+  display: none;
+  font-weight: bold;
+  font-size: 12px;
+  color: #000; }
+
+ </style>
+</head>
+
+<body>
+
+  
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <h1 class="logo"><a href="index.html">SpicyDevs<span>.</span></a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt=""></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="index.html#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
+          <li><a class="nav-link scrollto" href="order.html#services">Services</a></li>
+          <li><a class="nav-link scrollto " href="order.html">Order</a></li>
+          <li><a class="nav-link scrollto" href="index.html#team">Team</a></li>
+          <li class="dropdown"><a href="order.html#"><span>Show More</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="connect.html">SpicyDevs Connect</a></li>
+              <!-- <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li> -->
+              <li><a href="careers.html">Careers</a></li>
+              <li><a href="https://discord.gg/smbTR7yKBC">Discord</a></li>
+              <!-- <li><a href="#">Drop Down 4</a></li> -->
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+  
+
+
+  <main id="main" data-aos="fade-up">
+    <div class="content">
+    
+        <div class="container">
+          <div class="row align-items-stretch no-gutters contact-wrap">
+            <div class="col-md-12">
+              <div class="form h-100">
+                <h3>Order Now</h3>
+                <form class="mb-5" action="https://submit-form.com/RJRRYLXb" method="post" id="contactForm" name="contactForm">
+                    <input
+                    type="hidden"
+                    name="_redirect"
+                    value="https://spicydevs.me/submitted"
+                  />
+                    <div class="row">
+                      <div class="col-md-6 form-group mb-3">
+                        <label for="" class="col-form-label">Name *</label>
+                        <input type="text" class="form-control" name="name" id="name" placeholder="Your name" required>
+                      </div>
+                      <div class="col-md-6 form-group mb-3">
+                        <label for="" class="col-form-label">Email *</label>
+                        <input type="text" class="form-control" name="email" id="email" placeholder="Your email" required>
+                      </div>
+                    </div>
+                    <div class="row">
+                    <div class="col-md-6 form-group mb-3">
+                      <label for="" class="col-form-label">Discord ID | Instagram Tag*</label>
+                      <input type="text" class="form-control" name="discordid" id="id" placeholder="ex - Discord ID = 959376330762375168 | Instagram tag - @SpicyDevs" required>
+                    </div>
+                    <div class="col-md-6 form-group mb-3">
+                      <label for="" class="col-form-label">Discord Sever Link</label>
+                      <input type="text" class="form-control" name="Discord Server Link" id="dcserver" placeholder="Your Discord Server Link ( Optional )">
+                    </div>
+                  </div>
+                  <div class="col-md-12 form-group mb-3">
+                      <label for="" class="col-form-label">What you want to order?</label>
+                      <input type="text" class="form-control" name="Requirement" id="dcserv" placeholder="What you want to order?" required>
+                    </div>
+      
+                    <div class="row">
+                      <div class="col-md-12 form-group mb-3">
+                        <label for="message" class="col-form-label">Message *</label>
+                        <textarea class="form-control" name="message" id="message" cols="30" rows="4" placeholder="Write your message" required></textarea>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12 form-group">
+                        <input type="submit" value="Send Message" class="btn btn-primary rounded-0 py-2 px-4" style="background-color: rgb(11, 76, 255);">
+                        <span class="submitting"></span>
+                      </div>
+                    </div>
+                  </form>
+            </div>
+          </div>
+        </div>
+    
+      </div>
+</main>
+  
+
+   <!-- ======= Footer ======= -->
+   <footer id="footer">
+
+   
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>SpicyDevs<span>.</span></h3>
+            <p>
+              
+              <strong>Email:</strong> <a>contact@spicydevs.me</a>
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="order.html#hero">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="order.html#about">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="order.html#services">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="tos.html">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="privacypolicy.html">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://discord.gg/smbTR7yKBC">Web Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://discord.gg/smbTR7yKBC">Bot Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://discord.gg/smbTR7yKBC">Graphics Designing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://discord.gg/smbTR7yKBC">Digital Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://discord.gg/smbTR7yKBC">Server Designing</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Social Networks</h4>
+            <p>Follow us on the following social media network to stay connected with us.</p>
+            <div class="social-links mt-3">
+              <!-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a> -->
+              <!-- <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a> -->
+              <!-- <a href="https://instagram.com/SpicyDevs.official" class="instagram"><i class="bx bxl-instagram"></i></a> -->
+              <a href="https://discord.gg/smbTR7yKBC" class="google-plus"><i class="bx bx-world"></i></a>
+              <!-- <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a> -->
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-4">
+      <div class="copyright">
+        &copy; Copyright <strong><span>SpicyDevs</span></strong>. All Rights Reserved
+      </div>
+     
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="order.html#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="https://spicydevs.me/assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
