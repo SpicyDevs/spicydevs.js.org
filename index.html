@@ -550,13 +550,7 @@
           </div>
 
           <div class="col-lg-6">
-            <form action="https://submit-form.com/RJRRYLXb" method="post" role="form" class="php-email-form">
-
-              <input
-              type="hidden"
-              name="_redirect"
-              value="https://spicydevs.me/submitted"
-            />
+            <form id="myForm" role="form" class="php-email-form">
               <div class="row">
                 <div class="col form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -569,12 +563,86 @@
                 <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
               </div>
               <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                <textarea class="form-control" name="message" id="message" rows="5" placeholder="Message" required></textarea>
               </div>
-
+                    
               <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
           </div>
+                    
+          <script>
+            document.addEventListener('DOMContentLoaded', function() {
+              const myForm = document.getElementById('myForm');
+              myForm.addEventListener('submit', function(event) {
+                event.preventDefault(); // prevent form submission
+                    
+                // retrieve form data
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const subject = document.getElementById('subject').value;
+                const message = document.getElementById('message').value;
+                    
+                // format data into an embed object
+                const embed = {
+                 title: 'SpicyDevs Contact Form',
+                  
+                  fields: [
+                  {
+                      name: "Name",
+                      value: name,
+                      inline: true
+                    },
+                    {
+                      name: "Email",
+                      value: email,
+                      inline: true
+                    },
+                    {
+                      name: "Subject",
+                      value: subject,
+                      inline: true
+                    },
+                    {
+                      name: "Message",
+                      value: message,
+                      inline: true
+                    }
+                  ],
+                  timestamp: new Date().toISOString(),
+                  color: 0x2f3136
+                };
+
+                    
+                // send data to Discord webhook
+                fetch('https://discord.com/api/webhooks/1082973875324866650/jRB6fbiG5PR0TlZNY3ZU63xHfsSmsclEF2xVvxeUKMci6ZmoQMiUAvDVZPmw-Ge0F5D_', {
+                  method: 'POST',
+                  headers: {
+                    'Content-Type': 'application/json'
+                  },
+                  body: JSON.stringify({
+                    embeds: [embed]
+                  })
+                })
+                
+              .then(response => {
+                if (response.ok) {
+                  alert('Message sent successfully!');
+                  // reset the form
+                  document.getElementById('name').value = '';
+                  document.getElementById('email').value = '';
+                  document.getElementById('subject').value = '';
+                  document.getElementById('message').value = '';
+                } else {
+                  alert('Error sending message.');
+                }
+              })
+              .catch(error => {
+                console.error('Error:', error);
+                alert('Error sending message.');
+              });
+            });
+          });
+          </script>
 
         </div>
 
