@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /assets/css
+Disallow: /assets/img
+Disallow: /assets/vendor
+Disallow: /assets/js
+Sitemap: https://spicydevs.me/sitemap.xml
