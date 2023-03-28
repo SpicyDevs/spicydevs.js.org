@@ -1,4 +1,5 @@
 User-agent: *
+Disallow: /assets/
 Disallow: /assets/css
 Disallow: /assets/img
 Disallow: /assets/vendor
