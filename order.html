@@ -71,7 +71,7 @@ a {
     border-color: #000; }
 
 .col-form-label {
-  color: #000;
+  color: #000000;
   font-size: 13px; }
 
 .btn, .form-control, .custom-select {
@@ -116,7 +116,7 @@ a {
   border: 1px solid #efefef; }
   .contact-wrap .col-form-label {
     font-size: 14px;
-    color: #b3b3b3;
+    color: #000000;
     margin: 0 0 10px 0;
     display: inline-block;
     padding: 0; }
@@ -239,6 +239,7 @@ label.error {
         <div class="container">
           <div class="row align-items-stretch no-gutters contact-wrap">
             <div class="col-md-12">
+
               <div class="form h-100">
                 <h3>Order Now</h3>
                 <form class="mb-5" action="https://submit-form.com/RJRRYLXb" method="post" id="contactForm" name="contactForm">
@@ -249,32 +250,32 @@ label.error {
                   />
                     <div class="row">
                       <div class="col-md-6 form-group mb-3">
-                        <label for="" class="col-form-label">Name *</label>
-                        <input type="text" class="form-control" name="name" id="name" placeholder="Your name" required>
+                        <label for="" class="col-form-label">Name</label>
+                        <input type="text" class="form-control" name="name" id="name" placeholder="Your Discord Name" required>
                       </div>
                       <div class="col-md-6 form-group mb-3">
-                        <label for="" class="col-form-label">Email *</label>
-                        <input type="text" class="form-control" name="email" id="email" placeholder="Your email" required>
+                        <label for="" class="col-form-label">Email</label>
+                        <input type="text" class="form-control" name="email" id="email" placeholder="Your Email" required>
                       </div>
                     </div>
                     <div class="row">
                     <div class="col-md-6 form-group mb-3">
-                      <label for="" class="col-form-label">Discord ID | Instagram Tag*</label>
-                      <input type="text" class="form-control" name="discordid" id="id" placeholder="ex - Discord ID = 959376330762375168 | Instagram tag - @SpicyDevs" required>
+                      <label for="" class="col-form-label">Discord ID</label>
+                      <input type="text" class="form-control" name="discordid" id="id" placeholder="eg. - Discord ID = 526015297887404042">
                     </div>
                     <div class="col-md-6 form-group mb-3">
                       <label for="" class="col-form-label">Discord Sever Link</label>
-                      <input type="text" class="form-control" name="Discord Server Link" id="dcserver" placeholder="Your Discord Server Link ( Optional )">
+                      <input type="text" class="form-control" name="Discord Server Link" id="dcserver" placeholder="Your Discord Server Link (Optional)">
                     </div>
                   </div>
                   <div class="col-md-12 form-group mb-3">
-                      <label for="" class="col-form-label">What you want to order?</label>
-                      <input type="text" class="form-control" name="Requirement" id="dcserv" placeholder="What you want to order?" required>
+                      <label for="" class="col-form-label">What do you want to order?</label>
+                      <input type="text" class="form-control" name="Requirement" id="order" placeholder="What you want to order?" required>
                     </div>
       
                     <div class="row">
                       <div class="col-md-12 form-group mb-3">
-                        <label for="message" class="col-form-label">Message *</label>
+                        <label for="message" class="col-form-label">Message</label>
                         <textarea class="form-control" name="message" id="message" cols="30" rows="4" placeholder="Write your message" required></textarea>
                       </div>
                     </div>
@@ -286,6 +287,103 @@ label.error {
                     </div>
                   </form>
             </div>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+              const myForm = document.getElementById('myForm');
+              let canSubmit = true;
+          
+              myForm.addEventListener('submit', function(event) {
+                event.preventDefault(); // prevent form submission
+          
+                if (canSubmit) {
+                  // retrieve form data
+                  const name = document.getElementById('name').value;
+                  const email = document.getElementById('email').value;
+                  const id = document.getElementById('id').value;
+                  const dcserver = document.getElementById('dcserver').value;
+                  const order = document.getElementById('order').value;
+                  const message = document.getElementById('message').value;
+          
+                  // format data into an embed object
+                  const embed = {
+                    title: 'SpicyDevs Order Form',
+          
+                    fields: [
+                      {
+                        name: "Name",
+                        value: name,
+                        inline: true
+                      },
+                      {
+                        name: "Email",
+                        value: email,
+                        inline: true
+                      },
+                      {
+                        name: "Discord ID",
+                        value: id + "(" + "<@" + id + ">" + ")",
+                        inline: true
+                      },
+                      {
+                        name: "What does he want to Order.",
+                        value: order,
+                        inline: true
+                      },
+                      {
+                        name: "Discord Server",
+                        value: dcserver,
+                        inline: true
+                      },
+                      {
+                        name: "Message",
+                        value: message,
+                        inline: true
+                      }
+                    ],
+                    timestamp: new Date().toISOString(),
+                    color: 0x2f3136
+                  };
+          
+                  // send data to Discord webhook
+                  fetch('https://discord.com/api/webhooks/1091611911105298492/FzpAa1XmyLFEsv6xMen7LC9rVhxS9hjPxop1Y_J9utLtw5NID2vLygyo9m5FMuDCV_Kb', {
+                    method: 'POST',
+                    headers: {
+                      'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                      embeds: [embed]
+                    })
+                  })
+          
+                  .then(response => {
+                    if (response.ok) {
+                      alert('Message sent successfully!');
+                      // reset the form
+                      document.getElementById('name').value = '';
+                      document.getElementById('email').value = '';
+                      document.getElementById('id').value = '';
+                      document.getElementById('dcserver').value = '';
+                      document.getElementById('order').value = '';
+                      document.getElementById('message').value = '';
+                    } else {
+                      alert('Error sending message.');
+                    }
+                  })
+                  .catch(error => {
+                    console.error('Error:', error);
+                    alert('Error sending message.');
+                  });
+          
+                  canSubmit = false;
+                  setTimeout(function() {
+                    canSubmit = true;
+                  }, 60000); // set time limit to 1 minute (60000 milliseconds)
+                } else {
+                  alert('Please wait for 1 minute before submitting again.');
+                }
+              });
+            });
+</script>
           </div>
         </div>
     
