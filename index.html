@@ -208,7 +208,7 @@
           <div class="col-lg-6">
 
             <div class="progress">
-              <span class="skill">Website/Web-App<i class="val">90%</i></span>
+              <span class="skill">Website/Web-Development<i class="val">90%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
@@ -275,7 +275,7 @@
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box">
               <div class="icon"><i class="bx bx-world"></i></div>
-              <h4><a href="https://spicydevs.me/order">Websites/Web-Apps</a></h4>
+              <h4><a href="https://spicydevs.me/order">Websites/Web-Development</a></h4>
               <p>We Offer almost all kinds of Websites/Web Apps with the Best Quality Service in the Tech Industry.</p>
             </div>
           </div>
@@ -495,86 +495,95 @@
               <div class="form-group">
                 <textarea class="form-control" name="message" id="message" rows="5" placeholder="Message" required></textarea>
               </div>
-                    
+          
               <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
           </div>
-                    
+          
           <script>
             document.addEventListener('DOMContentLoaded', function() {
               const myForm = document.getElementById('myForm');
+              let canSubmit = true;
+          
               myForm.addEventListener('submit', function(event) {
                 event.preventDefault(); // prevent form submission
-                    
-                // retrieve form data
-                const name = document.getElementById('name').value;
-                const email = document.getElementById('email').value;
-                const subject = document.getElementById('subject').value;
-                const message = document.getElementById('message').value;
-                    
-                // format data into an embed object
-                const embed = {
-                 title: 'SpicyDevs Contact Form',
-                  
-                  fields: [
-                  {
-                      name: "Name",
-                      value: name,
-                      inline: true
+          
+                if (canSubmit) {
+                  // retrieve form data
+                  const name = document.getElementById('name').value;
+                  const email = document.getElementById('email').value;
+                  const subject = document.getElementById('subject').value;
+                  const message = document.getElementById('message').value;
+          
+                  // format data into an embed object
+                  const embed = {
+                    title: 'SpicyDevs Contact Form',
+          
+                    fields: [
+                      {
+                        name: "Name",
+                        value: name,
+                        inline: true
+                      },
+                      {
+                        name: "Email",
+                        value: email,
+                        inline: true
+                      },
+                      {
+                        name: "Subject",
+                        value: subject,
+                        inline: true
+                      },
+                      {
+                        name: "Message",
+                        value: message,
+                        inline: true
+                      }
+                    ],
+                    timestamp: new Date().toISOString(),
+                    color: 0x2f3136
+                  };
+          
+                  // send data to Discord webhook
+                  fetch('https://discord.com/api/webhooks/1091611911105298492/FzpAa1XmyLFEsv6xMen7LC9rVhxS9hjPxop1Y_J9utLtw5NID2vLygyo9m5FMuDCV_Kb', {
+                    method: 'POST',
+                    headers: {
+                      'Content-Type': 'application/json'
                     },
-                    {
-                      name: "Email",
-                      value: email,
-                      inline: true
-                    },
-                    {
-                      name: "Subject",
-                      value: subject,
-                      inline: true
-                    },
-                    {
-                      name: "Message",
-                      value: message,
-                      inline: true
-                    }
-                  ],
-                  timestamp: new Date().toISOString(),
-                  color: 0x2f3136
-                };
-
-                    
-                // send data to Discord webhook
-                fetch('https://discord.com/api/webhooks/1082973875324866650/jRB6fbiG5PR0TlZNY3ZU63xHfsSmsclEF2xVvxeUKMci6ZmoQMiUAvDVZPmw-Ge0F5D_', {
-                  method: 'POST',
-                  headers: {
-                    'Content-Type': 'application/json'
-                  },
-                  body: JSON.stringify({
-                    embeds: [embed]
+                    body: JSON.stringify({
+                      embeds: [embed]
+                    })
                   })
-                })
-                
-              .then(response => {
-                if (response.ok) {
-                  alert('Message sent successfully!');
-                  // reset the form
-                  document.getElementById('name').value = '';
-                  document.getElementById('email').value = '';
-                  document.getElementById('subject').value = '';
-                  document.getElementById('message').value = '';
+          
+                  .then(response => {
+                    if (response.ok) {
+                      alert('Message sent successfully!');
+                      // reset the form
+                      document.getElementById('name').value = '';
+                      document.getElementById('email').value = '';
+                      document.getElementById('subject').value = '';
+                      document.getElementById('message').value = '';
+                    } else {
+                      alert('Error sending message.');
+                    }
+                  })
+                  .catch(error => {
+                    console.error('Error:', error);
+                    alert('Error sending message.');
+                  });
+          
+                  canSubmit = false;
+                  setTimeout(function() {
+                    canSubmit = true;
+                  }, 60000); // set time limit to 1 minute (60000 milliseconds)
                 } else {
-                  alert('Error sending message.');
+                  alert('Please wait for 1 minute before submitting again.');
                 }
-              })
-              .catch(error => {
-                console.error('Error:', error);
-                alert('Error sending message.');
               });
             });
-          });
           </script>
-
-        </div>
+          
 
       </div>
     </section><!-- End Contact Section -->
