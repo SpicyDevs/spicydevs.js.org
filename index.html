@@ -531,7 +531,10 @@
             </form>
           </div>
           <script>
-    document.getElementById("submitButton").addEventListener("click", function() {
+    document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("submitButton").addEventListener("click", function(event) {
+        event.preventDefault(); // Prevent the default form submission
+
         const formData = {
             name: document.getElementById("name").value,
             email: document.getElementById("email").value,
@@ -560,6 +563,8 @@
             alert("An error occurred. Please try again later.");
         });
     });
+});
+
 </script>
         <!--  <script>
             document.addEventListener('DOMContentLoaded', function() {
