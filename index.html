@@ -511,7 +511,7 @@
           </div>
 
           <div class="col-lg-6">
-            <form id="myForm" role="form" class="php-email-form" action="https://spicyforms.netlify.app/.netlify/functions/forms" method="POST">
+            <form id="myForm" role="form" class="php-email-form" >
               <div class="row">
                 <div class="col form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Discord Name" required>
@@ -530,7 +530,37 @@
               <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
           </div>
-          
+          <script>
+    document.getElementById("submitButton").addEventListener("click", function() {
+        const formData = {
+            name: document.getElementById("name").value,
+            email: document.getElementById("email").value,
+            subject: document.getElementById("subject").value,
+            message: document.getElementById("message").value
+        };
+
+        fetch("https://spicyforms.netlify.app/.netlify/functions/forms", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(formData)
+        })
+        .then(response => {
+            if (response.ok) {
+                // Handle a successful response, e.g., show a thank you message
+                alert("Message sent successfully!");
+            } else {
+                // Handle errors, e.g., show an error message
+                alert("Error sending message. Please try again later.");
+            }
+        })
+        .catch(error => {
+            console.error("Error:", error);
+            alert("An error occurred. Please try again later.");
+        });
+    });
+</script>
         <!--  <script>
             document.addEventListener('DOMContentLoaded', function() {
               const myForm = document.getElementById('myForm');
