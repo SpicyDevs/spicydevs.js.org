@@ -546,6 +546,7 @@
 
     fetch("https://spicyforms.netlify.app/.netlify/functions/forms", {
       method: "POST",
+      mode: 'no-cors',
       headers: {
         "Content-Type": "application/json",
         "Accept": "application/json",
