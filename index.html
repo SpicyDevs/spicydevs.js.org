@@ -546,7 +546,6 @@
 
     fetch("https://spicyforms.netlify.app/.netlify/functions/forms", {
       method: "POST",
-    // mode: 'no-cors',
       headers: {
         "Content-Type": "application/json",
         "Accept": "application/json",
@@ -554,6 +553,7 @@
       body: JSON.stringify(formData),
     })
       .then(response => {
+        console.log("Response status:", response.status); // Log the response status
         if (response.ok) {
           document.getElementById("myForm").reset(); // Reset the form
           alert("Message sent successfully!");
@@ -562,7 +562,7 @@
         }
       })
       .catch(error => {
-        console.error("Error:", error);
+        console.error("Error:", error); // Log any error
         alert("An error occurred. Please try again later.");
       });
   });
