@@ -544,7 +544,7 @@
       message: document.getElementById("message").value,
     };
 
-    fetch("https://forms.spicydevs.me/.netlify/functions/forms", {
+    fetch("https://uncors.vercel.app/?url=https://forms.spicydevs.me/.netlify/functions/forms", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
