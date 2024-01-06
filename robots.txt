@@ -1,7 +1,10 @@
 User-agent: *
+<<<<<<< HEAD
+=======
 Disallow: /assets/
 Disallow: /assets/css
 Disallow: /assets/img
 Disallow: /assets/vendor
 Disallow: /assets/js
+>>>>>>> origin/main
 Sitemap: https://spicydevs.pages.dev/sitemap.xml

@@ -326,7 +326,11 @@
   "cart3": 62020,
   "cart4": 62021,
   "cash-stack": 62022,
+<<<<<<< HEAD
+  "cash": 62024,
+=======
   "cash": 62023,
+>>>>>>> origin/main
   "cast": 62024,
   "chat-dots-fill": 62025,
   "chat-dots": 62026,

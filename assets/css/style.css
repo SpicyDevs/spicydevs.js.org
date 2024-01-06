@@ -515,8 +515,17 @@ h6 {
   transition: 0.5s;
   color: #fff;
   background: #106eea;
+<<<<<<< HEAD
+  margin-left: 8px;
+}
+.image-fluid {
+  width: 100px;
+  height: 100px;
+}
+=======
 }
 
+>>>>>>> origin/main
 #hero .btn-get-started:hover {
   background: #247cf0;
 }
