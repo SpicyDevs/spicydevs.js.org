@@ -1,15 +1,2 @@
-<<<<<<< HEAD
 User-agent: *
 Sitemap: https://spicydevs.pages.dev/sitemap.xml
-=======
-User-agent: *
-<<<<<<< HEAD
-=======
-Disallow: /assets/
-Disallow: /assets/css
-Disallow: /assets/img
-Disallow: /assets/vendor
-Disallow: /assets/js
->>>>>>> origin/main
-Sitemap: https://spicydevs.pages.dev/sitemap.xml
->>>>>>> c3b2662af71686efbb5a3763f983ae7d56de81e6
