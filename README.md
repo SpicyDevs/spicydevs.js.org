@@ -8,16 +8,16 @@
 
 <p align="center">
   <a href="https://github.com/SpicyDevs/spicydevs.github.io/issues">
-    <img alt="GitHub issues" src="https://img.shields.io/github/issues/SpicyDevs/spicydevs.github.io">
+  <img alt="GitHub issues" src="https://img.shields.io/github/issues/SpicyDevs/spicydevs.github.io">
   </a>
   <a href="https://github.com/SpicyDevs/spicydevs.github.io/forks">
-    <img alt="GitHub forks" src="https://img.shields.io/github/forks/SpicyDevs/spicydevs.github.io">
+  <img alt="GitHub forks" src="https://img.shields.io/github/forks/SpicyDevs/spicydevs.github.io">
   </a>
   <a href="https://github.com/SpicyDevs/spicydevs.github.io/stargazers">
-    <img alt="GitHub stars" src="https://img.shields.io/github/stars/SpicyDevs/spicydevs.github.io">
+  <img alt="GitHub stars" src="https://img.shields.io/github/stars/SpicyDevs/spicydevs.github.io">
   </a>
-  <a href="https://github.com/SpicyDevs/spicydevs.github.io/blob/main/LICENSE">
-    <img alt="GitHub license" src="https://img.shields.io/github/license/SpicyDevs/spicydevs.github.io">
+  <a href="https://github.com/SpicyDevs/spicydevs.github.io/blob/main/LICENSE.txt">
+  <img alt="GitHub license" src="https://img.shields.io/github/license/SpicyDevs/spicydevs.github.io">
   </a>
 </p>
 
