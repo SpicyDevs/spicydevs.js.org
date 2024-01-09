@@ -264,8 +264,7 @@
     if (window.location.pathname.endsWith('/') && window.location.pathname !== '/') {
       // Remove the trailing slash
       var newUrl = window.location.href.slice(0, -1);
-      // Update the URL without the trailing slash
-      history.replaceState(null, null, newUrl);
+window.location.href = newUrl
     }
     
     // Handle specific cases for codes directory
@@ -273,7 +272,7 @@
       // Redirect to the non-slash version for /codes
       if (window.location.pathname.endsWith('/')) {
         var codesUrl = window.location.href.slice(0, -1);
-        history.replaceState(null, null, codesUrl);
+window.location.href = codesUrl
       }
     }
   });
