@@ -3,6 +3,11 @@
 (function() {
   "use strict";
 
+  if (window.location.pathname.endsWith('/')) {
+    window.location.href = window.location.href.slice(0, -1);
+  }
+
+
   /**
    * Easy selector helper function
    */
