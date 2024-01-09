@@ -3,12 +3,29 @@
 (function() {
   "use strict";
 
+(function() {
+  "use strict";
+
   document.addEventListener('DOMContentLoaded', function() {
+    // Check if the current path ends with a slash and is not the root path
     if (window.location.pathname.endsWith('/') && window.location.pathname !== '/') {
+      // Remove the trailing slash
       var newUrl = window.location.href.slice(0, -1);
+      // Update the URL without the trailing slash
       history.replaceState(null, null, newUrl);
     }
+    
+    // Handle specific cases for codes directory
+    if (window.location.pathname.startsWith('/codes/')) {
+      // Redirect to the non-slash version for /codes
+      if (window.location.pathname.endsWith('/')) {
+        var codesUrl = window.location.href.slice(0, -1);
+        history.replaceState(null, null, codesUrl);
+      }
+    }
   });
+})();
+
 
   /**
    * Easy selector helper function
