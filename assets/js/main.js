@@ -3,10 +3,12 @@
 (function() {
   "use strict";
 
-  if (window.location.pathname.endsWith('/')) {
-    window.location.href = window.location.href.slice(0, -1);
-  }
-
+  document.addEventListener('DOMContentLoaded', function() {
+    if (window.location.pathname.endsWith('/') && window.location.pathname !== '/') {
+      var newUrl = window.location.href.slice(0, -1);
+      history.replaceState(null, null, newUrl);
+    }
+  });
 
   /**
    * Easy selector helper function
