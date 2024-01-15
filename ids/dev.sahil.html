@@ -1,2 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Viewer</title>
+    <style>
+        #imageContainer {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div id="imageContainer">
+    <img id="mainImage" src="https://cdn.discordapp.com/attachments/1193930188111761588/1196460669080453140/Picsart_24-01-15_19-56-32-573.png?ex=65b7b5d4&is=65a540d4&hm=8aee916a67f8981b0525817fee84b09c432f73cf7721bf7c036d0a66a465fb86&" alt="id">
+</div>
+
+<script>
+    var images = [
+        "https://cdn.discordapp.com/attachments/1193930188111761588/1196439582397452388/Picsart_24-01-15_18-33-09-698.png?ex=65b7a231&is=65a52d31&hm=21b31aa6aa20f0aad6a8f81f311744679313677217d2bf7371b48d67240134dc&",
+        "https://cdn.discordapp.com/attachments/1193930188111761588/1196439582397452388/Picsart_24-01-15_18-33-09-698.png?ex=65b7a231&is=65a52d31&hm=21b31aa6aa20f0aad6a8f81f311744679313677217d2bf7371b48d67240134dc&",
+        // Add more image URLs as needed
+    ];
+
+    var currentImageIndex = 0;
+    var mainImage = document.getElementById('mainImage');
+
+    mainImage.addEventListener('click', function () {
+        currentImageIndex = (currentImageIndex + 1) % images.length;
+        mainImage.src = images[currentImageIndex];
+    });
+</script>
+
+</body>
+</html>
 <img src="https://cdn.discordapp.com/attachments/1193930188111761588/1196460669080453140/Picsart_24-01-15_19-56-32-573.png?ex=65b7b5d4&is=65a540d4&hm=8aee916a67f8981b0525817fee84b09c432f73cf7721bf7c036d0a66a465fb86&" alt="id">
 <img src="https://cdn.discordapp.com/attachments/1193930188111761588/1196460669080453140/Picsart_24-01-15_19-56-32-573.png?ex=65b7b5d4&is=65a540d4&hm=8aee916a67f8981b0525817fee84b09c432f73cf7721bf7c036d0a66a465fb86&" alt="id">
