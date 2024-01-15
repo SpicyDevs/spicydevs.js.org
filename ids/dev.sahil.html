@@ -4,6 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        #imageContainer {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div id="imageContainer">
+    <img id="mainImage" src="https://cdn.discordapp.com/attachments/1195343816224411721/1196464420403027988/IMG_20240115_201128.png?ex=65b7b953&is=65a54453&hm=0c9d6d685918b5d77d9398ec255750c2dfc02bf18b94e91dc5aaeb76938d02a7&" alt="id">
+</div>
+
+<script>
+    var images = [
+        "https://cdn.discordapp.com/attachments/1195343816224411721/1196464419526414396/IMG_20240115_201142.png?ex=65b7b952&is=65a54452&hm=47ea96e51dfc24d806596ce40eee0ac21b07a8d159b102f80c22b290a5eb9b82&",
+        "https://cdn.discordapp.com/attachments/1195343816224411721/1196464420403027988/IMG_20240115_201128.png?ex=65b7b953&is=65a54453&hm=0c9d6d685918b5d77d9398ec255750c2dfc02bf18b94e91dc5aaeb76938d02a7&",
+        // Add more image URLs as needed
+    ];
+
+    var currentImageIndex = 0;
+    var mainImage = document.getElementById('mainImage');
+
+    mainImage.addEventListener('click', function () {
+        currentImageIndex = (currentImageIndex + 1) % images.length;
+        mainImage.src = images[currentImageIndex];
+    });
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image Viewer</title>
     <style>
         #imageContainer {
