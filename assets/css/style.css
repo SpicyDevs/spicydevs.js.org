@@ -507,11 +507,11 @@ h6 {
 #hero .btn-get-started {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
-  font-weight: 500;
-  font-size: 14px;
+  font-weight: 550;
+  font-size: 15px;
   letter-spacing: 1px;
   display: inline-block;
-  padding: 10px 28px;
+  padding: 11px 30px;
   border-radius: 4px;
   transition: 0.5s;
   color: #fff;
