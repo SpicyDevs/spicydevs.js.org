@@ -1265,7 +1265,7 @@ section {
   color: #444444;
   text-align: center;
   box-shadow: 0 0 30px rgba(214, 215, 216, 0.3);
-  padding: 20px 0 30px 0;
+  padding: 20px 0px 30px 0px;
 }
 
 .contact .info-box i {
@@ -1293,6 +1293,7 @@ section {
 .contact .php-email-form {
   box-shadow: 0 0 30px rgba(214, 215, 216, 0.4);
   padding: 30px;
+  margin-top: 25px;
 }
 
 .contact .php-email-form .error-message {
