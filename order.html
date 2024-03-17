@@ -1,712 +1,393 @@
 <!DOCTYPE html>
-<html
-  lang="en"
-  style="
-    height: 100%;
-    width: 100%;
-    margin: 0px;
-    background: linear-gradient(90deg, #2f3640 23%, #181b20 100%);
-  "
->
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>SpicyDevs - Out of Order</title>
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>SpicyDevs - 503</title>
     <link
       href="https://fonts.googleapis.com/css?family=Righteous&amp;display=swap"
       rel="stylesheet"
     />
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-VWVEGRXHT3"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://oyepriyansh.pages.dev/cdnjs/analytics/spicydevs.js"
-    ></script>
   </head>
-  <body
-    style="
-      height: 100%;
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:display=swap");
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      overflow: hidden;
+      font-size: 16px;
+      font-family: "Poppins", sans-serif;
+      background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+    }
+
+    .main__503 {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+
+    .box__503 {
+      height: 80%;
+      background-color: #0093e9;
+      background-image: linear-gradient(0deg, #0093e9 0%, #80d0c7 100%);
+
       width: 100%;
-      margin: 0px;
-      background: linear-gradient(90deg, #2f3640 23%, #181b20 100%);
-    "
-  >
-    <!-- partial:index.partial.html -->
-    <div
-      class="moon"
-      style="
-        background: linear-gradient(90deg, #d0d0d0 48%, #919191 100%);
-        position: absolute;
-        top: -100px;
-        left: -300px;
-        width: 900px;
-        height: 900px;
-        content: '';
-        border-radius: 100%;
-        box-shadow: 0px 0px 30px -4px rgba(0, 0, 0, 0.5);
-      "
-    ></div>
-    <div
-      class="moon__crater moon__crater1"
-      style="
-        position: absolute;
-        content: '';
-        border-radius: 100%;
-        background: linear-gradient(90deg, #7a7a7a 38%, #c3c3c3 100%);
-        opacity: 0.6;
-        top: 250px;
-        left: 500px;
-        width: 60px;
-        height: 180px;
-      "
-    ></div>
-    <div
-      class="moon__crater moon__crater2"
-      style="
-        position: absolute;
-        content: '';
-        border-radius: 100%;
-        background: linear-gradient(90deg, #7a7a7a 38%, #c3c3c3 100%);
-        opacity: 0.6;
-        top: 650px;
-        left: 340px;
-        width: 40px;
-        height: 80px;
-        transform: rotate(55deg);
-      "
-    ></div>
-    <div
-      class="moon__crater moon__crater3"
-      style="
-        position: absolute;
-        content: '';
-        border-radius: 100%;
-        background: linear-gradient(90deg, #7a7a7a 38%, #c3c3c3 100%);
-        opacity: 0.6;
-        top: -20px;
-        left: 40px;
-        width: 65px;
-        height: 120px;
-        transform: rotate(250deg);
-      "
-    ></div>
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-    <div
-      class="star star1"
-      style="
-        background: grey;
-        position: absolute;
-        width: 5px;
-        height: 5px;
-        content: '';
-        border-radius: 100%;
-        transform: rotate(250deg);
-        opacity: 0.4;
-        animation-name: shimmer;
-        animation-duration: 1.5s;
-        animation-iteration-count: infinite;
-        animation-direction: alternate;
-      "
-    ></div>
-    <div
-      class="star star2"
-      style="
-        background: grey;
-        position: absolute;
-        width: 5px;
-        height: 5px;
-        content: '';
-        border-radius: 100%;
-        transform: rotate(250deg);
-        opacity: 0.4;
-        animation-name: shimmer;
-        animation-duration: 1.5s;
-        animation-iteration-count: infinite;
-        animation-direction: alternate;
-        top: 60%;
-        left: 90%;
-        animation-delay: 3s;
-      "
-    ></div>
-    <div
-      class="star star3"
-      style="
-        background: grey;
-        position: absolute;
-        width: 5px;
-        height: 5px;
-        content: '';
-        border-radius: 100%;
-        transform: rotate(250deg);
-        opacity: 0.4;
-        animation-name: shimmer;
-        animation-duration: 1.5s;
-        animation-iteration-count: infinite;
-        animation-direction: alternate;
-        top: 10%;
-        left: 70%;
-        animation-delay: 2s;
-      "
-    ></div>
-    <div
-      class="star star4"
-      style="
-        background: grey;
-        position: absolute;
-        width: 5px;
-        height: 5px;
-        content: '';
-        border-radius: 100%;
-        transform: rotate(250deg);
-        opacity: 0.4;
-        animation-name: shimmer;
-        animation-duration: 1.5s;
-        animation-iteration-count: infinite;
-        animation-direction: alternate;
-        top: 90%;
-        left: 80%;
-      "
-    ></div>
-    <div
-      class="star star5"
-      style="
-        background: grey;
-        position: absolute;
-        width: 5px;
-        height: 5px;
-        content: '';
-        border-radius: 100%;
-        transform: rotate(250deg);
-        opacity: 0.4;
-        animation-name: shimmer;
-        animation-duration: 1.5s;
-        animation-iteration-count: infinite;
-        animation-direction: alternate;
-        top: 20%;
-        left: 60%;
-        animation-delay: 0.5s;
-      "
-    ></div>
-    <div
-      class="star star6"
-      style="
-        background: grey;
-        position: absolute;
-        width: 5px;
-        height: 5px;
-        content: '';
-        border-radius: 100%;
-        transform: rotate(250deg);
-        opacity: 0.4;
-        animation-name: shimmer;
-        animation-duration: 1.5s;
-        animation-iteration-count: infinite;
-        animation-direction: alternate;
-        top: 80%;
-        left: 80%;
-        animation-delay: 1.5s;
-      "
-    ></div>
-    <div
-      class="star star7"
-      style="
-        background: grey;
-        position: absolute;
-        width: 5px;
-        height: 5px;
-        content: '';
-        border-radius: 100%;
-        transform: rotate(250deg);
-        opacity: 0.4;
-        animation-name: shimmer;
-        animation-duration: 1.5s;
-        animation-iteration-count: infinite;
-        animation-direction: alternate;
-        top: 40%;
-        left: 70%;
-        animation-delay: 2.5s;
-      "
-    ></div>
-    <div
-      class="star star8"
-      style="
-        background: grey;
-        position: absolute;
-        width: 5px;
-        height: 5px;
-        content: '';
-        border-radius: 100%;
-        transform: rotate(250deg);
-        opacity: 0.4;
-        animation-name: shimmer;
-        animation-duration: 1.5s;
-        animation-iteration-count: infinite;
-        animation-direction: alternate;
-        top: 60%;
-        left: 90%;
-        animation-delay: 3s;
-      "
-    ></div>
-    <div
-      class="star star9"
-      style="
-        background: grey;
-        position: absolute;
-        width: 5px;
-        height: 5px;
-        content: '';
-        border-radius: 100%;
-        transform: rotate(250deg);
-        opacity: 0.4;
-        animation-name: shimmer;
-        animation-duration: 1.5s;
-        animation-iteration-count: infinite;
-        animation-direction: alternate;
-        top: 10%;
-        left: 80%;
-        animation-delay: 1s;
-      "
-    ></div>
+    .text__503 {
+      font-size: 10em;
+      display: inline-flex;
+      text-shadow: #068299 -8px 0;
+    }
 
-    <div
-      class="error"
-      style="
-        position: absolute;
-        left: 100px;
-        top: 400px;
-        transform: translateY(-60%);
-        font-family: 'Righteous', cursive;
-        color: #363e49;
-      "
-    >
-      <div class="error__title" style="font-size: 4em">❌ OUT OF ORDER</div>
-      <div class="error__subtitle" style="font-size: 2em">
-        We apologize for the inconvenience.
-      </div>
-      <div class="error__description" style="opacity: 0.5">
-        We are currently not accepting any orders.
-      </div>
-      <button
-        class="error__button error__button--active"
-        onclick="location.href='/'"
-        type="button"
-        style="
-          min-width: 7em;
-          margin-top: 3em;
-          margin-right: 0.5em;
-          padding: 0.5em 2em;
-          outline: none;
-          border: 2px solid #e67e22;
-          background-color: #e67e22;
-          border-radius: 8em;
-          color: white;
-          cursor: pointer;
-          transition-duration: 0.2s;
-          font-size: 0.75em;
-          font-family: 'Righteous', cursive;
-        "
-      >
-        HOME
-      </button>
-      <button
-        class="error__button"
-        onclick="location.href='/#contact'"
-        type="button"
-        style="
-          min-width: 7em;
-          margin-top: 3em;
-          margin-right: 0.5em;
-          padding: 0.5em 2em;
-          outline: none;
-          border: 2px solid #2f3640;
-          background-color: transparent;
-          border-radius: 8em;
-          color: #576375;
-          cursor: pointer;
-          transition-duration: 0.2s;
-          font-size: 0.75em;
-          font-family: 'Righteous', cursive;
-        "
-      >
-        CONTACT
-      </button>
-    </div>
+    .text__503 h1:nth-child(1) {
+      -webkit-animation: Wave-animation 10s infinite;
+      -o-animation: Wave-animation 10s infinite;
+      animation: Wave-animation 10s infinite;
+    }
 
-    <div
-      class="astronaut"
-      style="
-        position: absolute;
-        width: 185px;
-        height: 300px;
-        left: 70%;
-        top: 50%;
-        transform: translate(-50%, -50%) rotate(20deg) scale(1.2);
-      "
-    >
-      <div
-        class="astronaut__backpack"
-        style="
-          background-color: #bfbfbf;
-          position: absolute;
-          top: 90px;
-          left: 47px;
-          width: 86px;
-          height: 90px;
-          content: '';
-          border-radius: 8px;
-        "
-      ></div>
-      <div
-        class="astronaut__body"
-        style="
-          background-color: #e6e6e6;
-          position: absolute;
-          top: 115px;
-          left: 55px;
-          width: 70px;
-          height: 80px;
-          content: '';
-          border-radius: 8px;
-        "
-      ></div>
-      <div
-        class="astronaut__body__chest"
-        style="
-          background-color: #d9d9d9;
-          position: absolute;
-          top: 140px;
-          left: 68px;
-          width: 45px;
-          height: 25px;
-          content: '';
-          border-radius: 6px;
-        "
-      ></div>
-      <div
-        class="astronaut__arm-left1"
-        style="
-          background-color: #e6e6e6;
-          position: absolute;
-          top: 127px;
-          left: 9px;
-          width: 65px;
-          height: 20px;
-          content: '';
-          border-radius: 8px;
-          transform: rotate(-30deg);
-        "
-      ></div>
-      <div
-        class="astronaut__arm-left2"
-        style="
-          background-color: #e6e6e6;
-          position: absolute;
-          top: 102px;
-          left: 7px;
-          width: 20px;
-          height: 45px;
-          content: '';
-          border-radius: 8px;
-          transform: rotate(-12deg);
-          border-top-left-radius: 8em;
-          border-top-right-radius: 8em;
-        "
-      ></div>
-      <div
-        class="astronaut__arm-right1"
-        style="
-          background-color: #e6e6e6;
-          position: absolute;
-          top: 113px;
-          left: 100px;
-          width: 65px;
-          height: 20px;
-          content: '';
-          border-radius: 8px;
-          transform: rotate(-10deg);
-        "
-      ></div>
-      <div
-        class="astronaut__arm-right2"
-        style="
-          background-color: #e6e6e6;
-          position: absolute;
-          top: 78px;
-          left: 141px;
-          width: 20px;
-          height: 45px;
-          content: '';
-          border-radius: 8px;
-          transform: rotate(-10deg);
-          border-top-left-radius: 8em;
-          border-top-right-radius: 8em;
-        "
-      ></div>
-      <div
-        class="astronaut__arm-thumb-left"
-        style="
-          background-color: #e6e6e6;
-          position: absolute;
-          top: 110px;
-          left: 21px;
-          width: 10px;
-          height: 6px;
-          content: '';
-          border-radius: 8em;
-          transform: rotate(-35deg);
-        "
-      ></div>
-      <div
-        class="astronaut__arm-thumb-right"
-        style="
-          background-color: #e6e6e6;
-          position: absolute;
-          top: 90px;
-          left: 133px;
-          width: 10px;
-          height: 6px;
-          content: '';
-          border-radius: 8em;
-          transform: rotate(20deg);
-        "
-      ></div>
-      <div
-        class="astronaut__leg-left"
-        style="
-          background-color: #e6e6e6;
-          position: absolute;
-          top: 188px;
-          left: 50px;
-          width: 23px;
-          height: 75px;
-          content: '';
-          transform: rotate(10deg);
-        "
-      ></div>
-      <div
-        class="astronaut__leg-right"
-        style="
-          background-color: #e6e6e6;
-          position: absolute;
-          top: 188px;
-          left: 108px;
-          width: 23px;
-          height: 75px;
-          content: '';
-          transform: rotate(-10deg);
-        "
-      ></div>
-      <div
-        class="astronaut__foot-left"
-        style="
-          background-color: white;
-          position: absolute;
-          top: 240px;
-          left: 43px;
-          width: 28px;
-          height: 20px;
-          content: '';
-          transform: rotate(10deg);
-          border-radius: 3px;
-          border-top-left-radius: 8em;
-          border-top-right-radius: 8em;
-          border-bottom: 4px solid #e67e22;
-        "
-      ></div>
-      <div
-        class="astronaut__foot-right"
-        style="
-          background-color: white;
-          position: absolute;
-          top: 240px;
-          left: 111px;
-          width: 28px;
-          height: 20px;
-          content: '';
-          transform: rotate(-10deg);
-          border-radius: 3px;
-          border-top-left-radius: 8em;
-          border-top-right-radius: 8em;
-          border-bottom: 4px solid #e67e22;
-        "
-      ></div>
-      <div
-        class="astronaut__wrist-left"
-        style="
-          background-color: #e67e22;
-          position: absolute;
-          top: 122px;
-          left: 6.5px;
-          width: 21px;
-          height: 4px;
-          content: '';
-          border-radius: 8em;
-          transform: rotate(-15deg);
-        "
-      ></div>
-      <div
-        class="astronaut__wrist-right"
-        style="
-          background-color: #e67e22;
-          position: absolute;
-          top: 98px;
-          left: 141px;
-          width: 21px;
-          height: 4px;
-          content: '';
-          border-radius: 8em;
-          transform: rotate(-10deg);
-        "
-      ></div>
+    .text__503 h1:nth-child(2) {
+      -webkit-animation: Wave-animation 30s infinite;
+      -o-animation: Wave-animation 30s infinite;
+      animation: Wave-animation 30s infinite;
+    }
 
-      <div class="astronaut__cord">
-        <canvas id="cord" height="500px" width="500px"></canvas>
-      </div>
+    .text__503 h1:nth-child(3) {
+      -webkit-animation: Wave-animation 20s infinite;
+      -o-animation: Wave-animation 20s infinite;
+      animation: Wave-animation 20s infinite;
+    }
 
-      <div
-        class="astronaut__head"
-        style="
-          background-color: white;
-          position: absolute;
-          top: 60px;
-          left: 60px;
-          width: 60px;
-          height: 60px;
-          content: '';
-          border-radius: 2em;
-        "
-      >
-        <canvas id="visor" width="60px" height="60px"></canvas>
-        <div
-          class="astronaut__head-visor-flare1"
-          style="
-            background-color: #7f8fa6;
-            position: absolute;
-            top: 28px;
-            left: 40px;
-            width: 10px;
-            height: 10px;
-            content: '';
-            border-radius: 2em;
-            opacity: 0.5;
-          "
-        ></div>
-        <div
-          class="astronaut__head-visor-flare2"
-          style="
-            background-color: #718093;
-            position: absolute;
-            top: 40px;
-            left: 38px;
-            width: 5px;
-            height: 5px;
-            content: '';
-            border-radius: 2em;
-            opacity: 0.3;
-          "
-        ></div>
-      </div>
-    </div>
-    <!-- partial -->
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        // Check if the current path ends with a slash and is not the root path
-        if (
-          window.location.pathname.endsWith("/") &&
-          window.location.pathname !== "/"
-        ) {
-          // Remove the trailing slash
-          var newUrl = window.location.href.slice(0, -1);
-          window.location.href = newUrl;
-        }
+    @keyframes Wave-animation {
+      0%,
+      100% {
+        transform: translateY(-50px);
+      }
+      50% {
+        transform: translateY(50px);
+      }
+    }
 
-        // Handle specific cases for codes directory
-        if (window.location.pathname.startsWith("/codes/")) {
-          // Redirect to the non-slash version for /codes
-          if (window.location.pathname.endsWith("/")) {
-            var codesUrl = window.location.href.slice(0, -1);
-            window.location.href = codesUrl;
-          }
-        }
-      });
+    .description__503 {
+      width: 40%;
+      margin: 0.5rem;
+      padding: 0.75rem;
+    }
 
-      function drawVisor() {
-        const canvas = document.getElementById("visor");
-        const ctx = canvas.getContext("2d");
+    .title__503 {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
 
-        ctx.beginPath();
-        ctx.moveTo(5, 45);
-        ctx.bezierCurveTo(15, 64, 45, 64, 55, 45);
+    .desc__503 {
+      margin: 0.8rem 0;
+      font-size: 1.1rem;
+    }
 
-        ctx.lineTo(55, 20);
-        ctx.bezierCurveTo(55, 15, 50, 10, 45, 10);
+    .link__503 {
+      display: flex;
+      justify-content: space-between;
+      margin: 0.75rem;
+      padding: 0.25rem;
+    }
 
-        ctx.lineTo(15, 10);
+    .link__503 a {
+      border: #068299 1px solid;
+      border-radius: 0.5rem;
+      padding: 0.75rem;
+      margin: 0 0.5rem;
+      text-decoration: none;
+      color: #000;
+      transition: 0.5s linear;
+    }
 
-        ctx.bezierCurveTo(15, 10, 5, 10, 5, 20);
-        ctx.lineTo(5, 45);
+    .link__503 a:hover {
+      background-color: #068299;
+    }
 
-        ctx.fillStyle = "#2f3640";
-        ctx.strokeStyle = "#f5f6fa";
-        ctx.fill();
-        ctx.stroke();
+    .wave {
+      content: "";
+      width: 100%;
+      height: 20%;
+      animation: wave 7s infinite;
+      background: #80d0c7;
+      position: relative;
+      transform: rotateZ(180deg);
+      top: 1px;
+    }
+
+    @keyframes wave {
+      0%,
+      100% {
+        clip-path: polygon(
+          100% 0%,
+          0% 0%,
+          0% 45.5%,
+          1% 45.65%,
+          2% 46.09%,
+          3% 46.82%,
+          4% 47.82%,
+          5% 49.08%,
+          6% 50.58%,
+          7% 52.3%,
+          8% 54.2%,
+          9% 56.26%,
+          10% 58.45%,
+          11% 60.72%,
+          12% 63.04%,
+          13% 65.38%,
+          14% 67.7%,
+          15% 69.96%,
+          16% 72.12%,
+          17% 74.16%,
+          18% 76.03%,
+          19% 77.7%,
+          20% 79.16%,
+          21% 80.38%,
+          22% 81.33%,
+          23% 82.01%,
+          24% 82.4%,
+          25% 82.5%,
+          26% 82.29%,
+          27% 81.8%,
+          28% 81.02%,
+          29% 79.97%,
+          30% 78.66%,
+          31% 77.12%,
+          32% 75.37%,
+          33% 73.43%,
+          34% 71.35%,
+          35% 69.15%,
+          36% 66.86%,
+          37% 64.53%,
+          38% 62.19%,
+          39% 59.88%,
+          40% 57.64%,
+          41% 55.5%,
+          42% 53.49%,
+          43% 51.65%,
+          44% 50.01%,
+          45% 48.6%,
+          46% 47.43%,
+          47% 46.52%,
+          48% 45.9%,
+          49% 45.56%,
+          50% 45.52%,
+          51% 45.77%,
+          52% 46.32%,
+          53% 47.15%,
+          54% 48.25%,
+          55% 49.6%,
+          56% 51.18%,
+          57% 52.97%,
+          58% 54.93%,
+          59% 57.04%,
+          60% 59.26%,
+          61% 61.56%,
+          62% 63.89%,
+          63% 66.23%,
+          64% 68.53%,
+          65% 70.76%,
+          66% 72.88%,
+          67% 74.85%,
+          68% 76.66%,
+          69% 78.26%,
+          70% 79.63%,
+          71% 80.76%,
+          72% 81.61%,
+          73% 82.19%,
+          74% 82.47%,
+          75% 82.46%,
+          76% 82.15%,
+          77% 81.55%,
+          78% 80.67%,
+          79% 79.52%,
+          80% 78.13%,
+          81% 76.51%,
+          82% 74.69%,
+          83% 72.69%,
+          84% 70.56%,
+          85% 68.33%,
+          86% 66.02%,
+          87% 63.68%,
+          88% 61.35%,
+          89% 59.06%,
+          90% 56.85%,
+          91% 54.75%,
+          92% 52.8%,
+          93% 51.03%,
+          94% 49.47%,
+          95% 48.14%,
+          96% 47.07%,
+          97% 46.26%,
+          98% 45.74%,
+          99% 45.51%,
+          100% 45.58%
+        );
+      }
+      50% {
+        clip-path: polygon(
+          100% 0%,
+          0% 0%,
+          0% 73.5%,
+          1% 73.38%,
+          2% 73.02%,
+          3% 72.43%,
+          4% 71.62%,
+          5% 70.59%,
+          6% 69.38%,
+          7% 67.99%,
+          8% 66.44%,
+          9% 64.77%,
+          10% 63%,
+          11% 61.16%,
+          12% 59.28%,
+          13% 57.38%,
+          14% 55.5%,
+          15% 53.67%,
+          16% 51.91%,
+          17% 50.27%,
+          18% 48.75%,
+          19% 47.39%,
+          20% 46.2%,
+          21% 45.22%,
+          22% 44.44%,
+          23% 43.9%,
+          24% 43.58%,
+          25% 43.5%,
+          26% 43.67%,
+          27% 44.07%,
+          28% 44.7%,
+          29% 45.55%,
+          30% 46.61%,
+          31% 47.86%,
+          32% 49.28%,
+          33% 50.85%,
+          34% 52.54%,
+          35% 54.33%,
+          36% 56.18%,
+          37% 58.07%,
+          38% 59.96%,
+          39% 61.84%,
+          40% 63.66%,
+          41% 65.39%,
+          42% 67.02%,
+          43% 68.51%,
+          44% 69.84%,
+          45% 70.99%,
+          46% 71.94%,
+          47% 72.67%,
+          48% 73.18%,
+          49% 73.45%,
+          50% 73.48%,
+          51% 73.28%,
+          52% 72.83%,
+          53% 72.16%,
+          54% 71.27%,
+          55% 70.17%,
+          56% 68.89%,
+          57% 67.44%,
+          58% 65.85%,
+          59% 64.14%,
+          60% 62.34%,
+          61% 60.48%,
+          62% 58.59%,
+          63% 56.69%,
+          64% 54.83%,
+          65% 53.02%,
+          66% 51.3%,
+          67% 49.7%,
+          68% 48.24%,
+          69% 46.94%,
+          70% 45.82%,
+          71% 44.91%,
+          72% 44.22%,
+          73% 43.75%,
+          74% 43.52%,
+          75% 43.54%,
+          76% 43.79%,
+          77% 44.27%,
+          78% 44.98%,
+          79% 45.91%,
+          80% 47.04%,
+          81% 48.36%,
+          82% 49.84%,
+          83% 51.45%,
+          84% 53.18%,
+          85% 54.99%,
+          86% 56.86%,
+          87% 58.76%,
+          88% 60.65%,
+          89% 62.5%,
+          90% 64.3%,
+          91% 66%,
+          92% 67.58%,
+          93% 69.01%,
+          94% 70.28%,
+          95% 71.36%,
+          96% 72.23%,
+          97% 72.88%,
+          98% 73.31%,
+          99% 73.49%,
+          100% 73.44%
+        );
+      }
+    }
+
+    @media (max-width: 768px) {
+      .box__503 {
+        flex-direction: column;
       }
 
-      const cordCanvas = document.getElementById("cord");
-      const ctx = cordCanvas.getContext("2d");
-
-      let y1 = 160;
-      let y2 = 100;
-      let y3 = 100;
-
-      let y1Forward = true;
-      let y2Forward = false;
-      let y3Forward = true;
-
-      function animate() {
-        requestAnimationFrame(animate);
-        ctx.clearRect(0, 0, innerWidth, innerHeight);
-
-        ctx.beginPath();
-        ctx.moveTo(130, 170);
-        ctx.bezierCurveTo(250, y1, 345, y2, 400, y3);
-
-        ctx.strokeStyle = "white";
-        ctx.lineWidth = 8;
-        ctx.stroke();
-
-        if (y1 === 100) {
-          y1Forward = true;
-        }
-
-        if (y1 === 300) {
-          y1Forward = false;
-        }
-
-        if (y2 === 100) {
-          y2Forward = true;
-        }
-
-        if (y2 === 310) {
-          y2Forward = false;
-        }
-
-        if (y3 === 100) {
-          y3Forward = true;
-        }
-
-        if (y3 === 317) {
-          y3Forward = false;
-        }
-
-        y1Forward ? (y1 += 1) : (y1 -= 1);
-        y2Forward ? (y2 += 1) : (y2 -= 1);
-        y3Forward ? (y3 += 1) : (y3 -= 1);
+      .text__503 {
+        font-size: 4.5em;
       }
 
-      drawVisor();
-      animate();
-    </script>
+      .text__503 h1 {
+        padding: 0 0.25rem;
+      }
+
+      .description__503 {
+        width: 90%;
+      }
+    }
+  </style>
+  <body>
+    <main class="main__503">
+      <!--wave-->
+      <div class="wave"></div>
+      <!--Text-->
+      <div class="box__503">
+        <div class="text__503">
+          <h1>5</h1>
+          <h1>0</h1>
+          <h1>3</h1>
+        </div>
+        <!--Description and buttons-->
+        <div class="description__503">
+          <p class="title__503">Sorry, but we are currently out of order.</p>
+          <p class="desc__503">
+            Sorry, we are not accepting any new orders at the moment. Choose one of
+            the following buttons to return
+          </p>
+          <div class="link__503">
+            <a href="javascript: history.back()">Back</a>
+            <a href="./">Back to Home</a>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
