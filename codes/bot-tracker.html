@@ -1,246 +1,344 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <!-- Favicons -->
+    <link href="../assets/img/favicon.ico" rel="icon" />
+    <link href="../assets/img/favicon.ico" rel="apple-touch-icon" />
 
-  <!-- Favicons -->
-  <link href="../assets/img/favicon.ico" rel="icon">
-  <link href="../assets/img/favicon.ico" rel="apple-touch-icon">
+    <title>Discord Bot Tracker</title>
+    <meta name="title" content="Discord Bot Tracker | SpicyDevs" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://spicydevs.js.org" />
+    <meta property="og:title" content="Discord Bot Tracker | SpicyDevs" />
+    <meta
+      property="og:image"
+      content="https://cdn-sd.pages.dev/img/tracker.jpg"
+    />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://spicydevs.js.org" />
+    <meta property="twitter:title" content="Discord Bot Tracker | SpicyDevs" />
+    <meta
+      property="twitter:image"
+      content="https://cdn-sd.pages.dev/img/tracker.jpg"
+    />
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-VWVEGRXHT3"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://oyepriyansh.pages.dev/cdnjs/analytics/spicydevs.js"
+    ></script>
 
-  <title>Discord Bot Tracker</title>
-  <meta name="title" content="Discord Bot Tracker | SpicyDevs" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://spicydevs.js.org" />
-  <meta property="og:title" content="Discord Bot Tracker | SpicyDevs" />
-  <meta property="og:image" content="https://cdn-sd.pages.dev/img/tracker.jpg" />
-  <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:url" content="https://spicydevs.js.org" />
-  <meta property="twitter:title" content="Discord Bot Tracker | SpicyDevs" />
-  <meta property="twitter:image" content="https://cdn-sd.pages.dev/img/tracker.jpg" />
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VWVEGRXHT3"></script>
-  <script type="text/javascript" src="https://oyepriyansh.pages.dev/cdnjs/analytics/spicydevs.js"></script>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
 
-  <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-    rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="../assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="../assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/vendor/boxicons/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/vendor/swiper/swiper-bundle.min.css"
+      rel="stylesheet"
+    />
 
-  <!-- Vendor CSS Files -->
-  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Template Main CSS File -->
+    <link href="../assets/css/style.css" rel="stylesheet" />
+  </head>
 
-  <!-- Template Main CSS File -->
-  <link href="../assets/css/style.css" rel="stylesheet">
-
-
-</head>
-
-<body>
-
-  <!-- ======= Top Bar ======= -->
-  <section id="topbar" class="d-flex align-items-center">
-    <div class="container d-flex justify-content-center justify-content-md-between">
-      <div class="contact-info d-flex align-items-center">
-        <i class="bi bi-envelope d-flex align-items-center"><span><a
-              href="mailto:hello@spicy.is-a.dev">hello@spicy.is-a.dev</a></span></i>
-      </div>
-      <div class="social-links d-none d-md-flex align-items-center">
-        <a href="./discord" class="discord"><i class="bi bi-discord"></i></i></a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ======= Header ======= -->
-  <header id="header" class="d-flex align-items-center">
-    <div class="container d-flex align-items-center justify-content-between">
-
-      <h1 class="logo"><a href="/">SpicyDevs<span>.</span></a></h1>
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto" href="../#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="../#about">About</a></li>
-          <li><a class="nav-link scrollto" href="../#services">Services</a></li>
-          <li><a class="nav-link scrollto " href="../#team">Team</a></li>
-          <li><a class="nav-link scrollto " href="../codes">Codes</a></li>
-          <li class="dropdown"><a href="#"><span>Show More</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-
-              <li><a href="..//connect">SpicyDevs Connect</a></li>
-              <li><a href="./discord">Discord</a></li>
-            </ul>
-          </li>
-          <li><a class="nav-link scrollto" href="../#contact">Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
-    </div>
-  </header><!-- End Header -->
-
-  <main id="main" data-aos="fade-up">
-
-    <!-- ======= Breadcrumbs Section ======= -->
-    <section class="breadcrumbs">
-      <div class="container">
-
-        <div class="d-flex justify-content-between align-items-center">
-          <h2>Code Details</h2>
-          <ol>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../codes">Codes</a></li>
-            <li>Discord Bot Tracker</li>
-          </ol>
+  <body>
+    <!-- ======= Top Bar ======= -->
+    <section id="topbar" class="d-flex align-items-center">
+      <div
+        class="container d-flex justify-content-center justify-content-md-between"
+      >
+        <div class="contact-info d-flex align-items-center">
+          <i class="bi bi-envelope d-flex align-items-center"
+            ><span>
+              <a href="mailto:hello@spicy.is-a.dev"
+                >hello@spicy.is-a.dev</a
+              ></span
+            ></i
+          >
         </div>
-
+        <div class="social-links d-none d-md-flex align-items-center">
+          <a href="../discord" class="discord" target="_blank"
+            ><i class="bi bi-discord"></i
+          ></a>
+        </div>
       </div>
-    </section><!-- Breadcrumbs Section -->
+    </section>
 
-    <!-- ======= Portfolio Details Section ======= -->
-    <section id="portfolio-details" class="portfolio-details">
-      <div class="container">
+    <!-- ======= Header ======= -->
+    <header id="header" class="d-flex align-items-center">
+      <div class="container d-flex align-items-center justify-content-between">
+        <h1 class="logo">
+          <a href="../">SpicyDevs<span>.</span></a>
+        </h1>
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="nav-link scrollto" href="../#hero">Home</a></li>
+            <li><a class="nav-link scrollto" href="../#about">About</a></li>
+            <li>
+              <a class="nav-link scrollto" href="../#services">Services</a>
+            </li>
+            <li><a class="nav-link scrollto" href="../#team">Team</a></li>
+            <li><a class="nav-link scrollto" href="../codes">Codes</a></li>
+            <li class="dropdown">
+              <a href="#"
+                ><span>Show More</span> <i class="bi bi-chevron-down"></i
+              ></a>
+              <ul>
+                <li><a href="../connect">SpicyDevs Connect</a></li>
+                <li><a href="../discord">Discord</a></li>
+              </ul>
+            </li>
+            <li><a class="nav-link scrollto" href="../#contact">Contact</a></li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <!-- .navbar -->
+      </div>
+    </header>
+    <!-- End Header -->
 
-        <div class="row gy-4">
+    <main id="main" data-aos="fade-up">
+      <!-- ======= Breadcrumbs Section ======= -->
+      <section class="breadcrumbs">
+        <div class="container">
+          <div class="d-flex justify-content-between align-items-center">
+            <h2>Code Details</h2>
+            <ol>
+              <li><a href="../">Home</a></li>
+              <li><a href="../codes">Codes</a></li>
+              <li>Discord Bot Tracker</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+      <!-- Breadcrumbs Section -->
 
-          <div class="col-lg-8">
-            <div class="portfolio-details-slider swiper">
-              <div class="swiper-wrapper align-items-center">
-
-                <div>
-                  <a href="https://cdn-sd.pages.dev/img/tracker.jpg">
-                    <img src="https://cdn-sd.pages.dev/img/tracker.jpg" alt="img1" loading="lazy">
-                  </a>
+      <!-- ======= Portfolio Details Section ======= -->
+      <section id="portfolio-details" class="portfolio-details">
+        <div class="container">
+          <div class="row gy-4">
+            <div class="col-lg-8">
+              <div class="portfolio-details-slider swiper">
+                <div class="swiper-wrapper align-items-center">
+                  <div>
+                    <a href="https://cdn-sd.pages.dev/img/tracker.jpg">
+                      <img
+                        src="https://cdn-sd.pages.dev/img/tracker.jpg"
+                        alt="img1"
+                        loading="lazy"
+                      />
+                    </a>
+                  </div>
                 </div>
-
+                <div class="swiper-pagination"></div>
               </div>
-              <div class="swiper-pagination"></div>
+            </div>
+
+            <div class="col-lg-4">
+              <div class="portfolio-info">
+                <h3>Project information</h3>
+                <ul>
+                  <li><strong>Category</strong>: Discord Bot</li>
+                  <li>
+                    <strong>Uploaded by</strong>:
+                    <a href="https://aayu.sh.gg">Aayu5h</a>
+                  </li>
+                  <li><strong>Uploaded On</strong>: 4 February, 2023</li>
+                  <li>
+                    <button
+                      class="btn"
+                      onclick="location.href='https://github.com/SpicyDevs/'"
+                      type="button"
+                    >
+                      <i class="bi bi-github"></i> GitHub
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="btn"
+                      onclick="location.href='https://replit.com/@SpicyDevs/Bot-Tracker'"
+                      type="button"
+                    >
+                      <i class="bi bi-folder2-open"></i> Replit Code
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="btn"
+                      onclick="location.href='https://cdn-sd.pages.dev/download/dc-tracker.zip'"
+                      type="button"
+                    >
+                      <i class="bi bi-download"></i> <span>Download ZIP</span>
+                      <span style="font-size: 12px; color: rgb(209, 209, 209)"
+                        >(15.2 KB)</span
+                      >
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="btn"
+                      onclick="location.href='./discord'"
+                      type="button"
+                    >
+                      <i class="bi bi-discord"></i> Tutorial
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              <div class="portfolio-description">
+                <h2>More Details:</h2>
+                <p></p>
+                <ul>
+                  <li><b>Status:</b> 🟢 Online</li>
+                  <li><b>PC Compatible:</b> ✅ True</li>
+                  <li><b>Mobile Compatible:</b> ✅ True</li>
+                </ul>
+                <p class="fw-bold">
+                  TIP: You Can find More Codes <a href="../codes">here</a>!
+                </p>
+              </div>
             </div>
           </div>
+        </div>
+      </section>
+      <!-- End Portfolio Details Section -->
+    </main>
+    <!-- End #main -->
 
-          <div class="col-lg-4">
-            <div class="portfolio-info">
-              <h3>Project information</h3>
-              <ul>
-                <li><strong>Category</strong>: Discord Bot</li>
-                <li><strong>Uploaded by</strong>: <a href="https://aayu.sh.gg">Aayu5h</a></li>
-                <li><strong>Uploaded On</strong>: 4 February, 2023</li>
-                <li><button class="btn" onclick="location.href='https://github.com/SpicyDevs/'" type="button"><i
-                      class="bi bi-github"></i> GitHub</button></li>
-                <li><button class="btn" onclick="location.href='https://replit.com/@SpicyDevs/Bot-Tracker'"
-                    type="button"><i class="bi bi-folder2-open"></i> Replit Code</button></li>
-                <li><button class="btn" onclick="location.href='https://cdn-sd.pages.dev/download/dc-tracker.zip'"
-                    type="button"><i class="bi bi-download"></i> <span>Download ZIP</span> <span
-                      style="font-size: 12px; color: rgb(209, 209, 209);">(15.2 KB)</span></button></li>
-                <li><button class="btn" onclick="location.href='./discord'" type="button"><i
-                      class="bi bi-discord"></i> Tutorial</button></li>
-              </ul>
-            </div>
-            <div class="portfolio-description">
-              <h2>More Details:</h2>
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 footer-contact">
+              <h3>SpicyDevs<span>.</span></h3>
               <p>
-              <ul>
-
-                <li><b>Status:</b> 🟢 Online</li>
-                <li><b>PC Compatible:</b> ✅ True</li>
-                <li><b>Mobile Compatible:</b> ✅ True</li>
-                <br>
-                <b>TIP: You Can find More Codes <a href="../codes">here</a>!</b>
-              </ul>
+                <strong>Email:</strong>
+                <a href="mailto:hello@spicy.is-a.dev">hello@spicy.is-a.dev</a>
+                <br />
+                <strong>Discord:</strong> <a href="../discord">@aayu5h</a>
               </p>
             </div>
-          </div>
 
-        </div>
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="../#hero">Home</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="../#about">About us</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="../#services">Services</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="../tos">Terms of Service</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="../privacypolicy">Privacy Policy</a>
+                </li>
+              </ul>
+            </div>
 
-      </div>
-    </section><!-- End Portfolio Details Section -->
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Our Services</h4>
+              <ul>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="../discord">Web Development</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="../discord">Bot Development</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="../discord">Graphics Designing</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="../discord">Video/Image Editing</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="../discord">Server Designing</a>
+                </li>
+              </ul>
+            </div>
 
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-
-
-
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>SpicyDevs<span>.</span></h3>
-            <p>
-              <strong>Email:</strong> <a href="mailto:hello@spicy.is-a.dev">hello@spicy.is-a.dev</a>
-              <br>
-              <strong>Discord:</strong> <a href="./discord">@aayu5h</a>
-            </p>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#hero">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#about">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#services">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="/tos">Terms of Service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="/privacypolicy">Privacy Policy</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="./discord">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="./discord">Bot Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="./discord">Graphics Designing</a>
-              </li>
-              <li><i class="bx bx-chevron-right"></i> <a href="./discord">Video/Image Editing</a>
-              </li>
-              <li><i class="bx bx-chevron-right"></i> <a href="./discord">Server Designing</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Social Networks</h4>
-            <p>Follow us on the following Social Media Platforms to Stay Connected with Us.</p>
-            <div class="social-links mt-3">
-              <a href="./discord" class="google-plus"><i class="bi bi-discord"></i></a>
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Our Social Networks</h4>
+              <p>
+                Follow us on the following Social Media Platforms to Stay
+                Connected with Us.
+              </p>
+              <div class="social-links mt-3">
+                <a href="../discord" class="google-plus"
+                  ><i class="bi bi-discord"></i
+                ></a>
+              </div>
             </div>
           </div>
-
         </div>
       </div>
-    </div>
 
-    <div class="container py-4">
-      <div class="copyright">
-        &copy; Copyright <strong><span>SpicyDevs</span></strong> 2024. All Rights Reserved.</i></i>
+      <div class="container py-4">
+        <div class="copyright">
+          &copy; Copyright <strong><span>SpicyDevs</span></strong> 2024. All
+          Rights Reserved.
+        </div>
       </div>
+    </footer>
+    <!-- End Footer -->
 
-    </div>
-  </footer><!-- End Footer -->
+    <div id="preloader"></div>
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
 
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
+    <!-- Vendor JS Files -->
+    <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="../assets/vendor/aos/aos.js"></script>
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
 
-  <!-- Vendor JS Files -->
-  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="../assets/vendor/aos/aos.js"></script>
-  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
-
-
-  <!-- Template Main JS File -->
-  <script src="../assets/js/main.js"></script>
-
-</body>
-
+    <!-- Template Main JS File -->
+    <script src="../assets/js/main.js"></script>
+  </body>
 </html>
