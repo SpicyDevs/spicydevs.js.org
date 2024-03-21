@@ -1530,6 +1530,7 @@ section {
 --------------------------------------------------------------*/
 .portfolio .portfolio-item {
   margin-bottom: 30px;
+  cursor: pointer;
 }
 
 .portfolio #portfolio-flters {
@@ -1574,6 +1575,10 @@ section {
   margin-bottom: 20px;
   border-radius: 10px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.4);
+}
+
+.portfolio .portfolio-wrap:hover {
+  box-shadow: 0px 0 25px 0 rgb(16, 110, 234);
 }
 
 /*.portfolio .portfolio-wrap::before {
