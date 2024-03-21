@@ -8,27 +8,25 @@
     <link href="assets/img/favicon.ico" rel="icon" />
     <link href="assets/img/favicon.ico" rel="apple-touch-icon" />
 
-    <title>SpicyDevs - Connect</title>
-    <meta name="title" content="SpicyDevs | Connect" />
+    <title>SpicyDevs - rule</title>
+    <meta name="title" content="SpicyDevs | Rules" />
     <meta
       name="description"
-      content="SpicyDevs Connect Official page for partnerships, investments, and sponsorships"
+      content="Rules provided by SpicyDevs; you must follow this while interacting with our Discord Server"
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://spicydevs.js.org" />
-    <meta property="og:title" content="Connect | SpicyDevs" />
+    <meta property="og:title" content="Rules | SpicyDevs" />
     <meta
       property="og:description"
-      content="SpicyDevs Connect Official page for partnerships, investments, and sponsorships"
+      content="Rules provided by SpicyDevs; you must follow this while interacting with our Discord Server"
     />
-    <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://spicydevs.js.org" />
-    <meta property="twitter:title" content="Connect | SpicyDevs" />
+    <meta property="twitter:title" content="Rules | SpicyDevs" />
     <meta
       property="twitter:description"
-      content="SpicyDevs Connect Official page for partnerships, investments, and sponsorships"
+      content="Rules provided by SpicyDevs; you must follow this while interacting with our Discord Server"
     />
-
     <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
@@ -36,10 +34,6 @@
     />
 
     <!-- Vendor CSS Files -->
-    <link
-      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
     <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
     <link
       href="assets/vendor/bootstrap/css/bootstrap.min.css"
@@ -58,6 +52,69 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" />
+    <style>
+      .rule {
+        padding: 60px 0;
+      }
+
+      .rule .rule-list {
+        padding: 0;
+        list-style: none;
+      }
+
+      .rule .rule-list li {
+        border-bottom: 1px solid #d4e5fc;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+      }
+
+      .rule .rule-list .question {
+        display: block;
+        position: relative;
+        font-family: #106eea;
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 400;
+        padding-left: 25px;
+        cursor: pointer;
+        color: #0d58ba;
+        transition: 0.3s;
+      }
+
+      .rule .rule-list i {
+        font-size: 16px;
+        position: absolute;
+        left: 0;
+        top: -2px;
+      }
+
+      .rule .rule-list p {
+        margin-bottom: 0;
+        padding: 10px 0 0 25px;
+      }
+
+      .rule .rule-list .icon-show {
+        display: none;
+      }
+
+      .rule .rule-list .collapsed {
+        color: black;
+      }
+
+      .rule .rule-list .collapsed:hover {
+        color: #106eea;
+      }
+
+      .rule .rule-list .collapsed .icon-show {
+        display: inline-block;
+        transition: 0.6s;
+      }
+
+      .rule .rule-list .collapsed .icon-close {
+        display: none;
+        transition: 0.6s;
+      }
+    </style>
   </head>
 
   <body>
@@ -89,136 +146,64 @@
         <h1 class="logo">
           <a href="./">SpicyDevs<span>.</span></a>
         </h1>
+        <!-- .navbar -->
         <nav id="navbar" class="navbar">
           <ul>
-            <li><a class="nav-link scrollto" href="./#hero">Home</a></li>
+            <li><a class="nav-link scrollto active" href="./#hero">Home</a></li>
             <li><a class="nav-link scrollto" href="./#about">About</a></li>
             <li>
               <a class="nav-link scrollto" href="./#services">Services</a>
             </li>
             <li><a class="nav-link scrollto" href="./#team">Team</a></li>
-            <li><a class="nav-link scrollto" href="./codes">Codes</a></li>
+            <li><a class="nav-link scrollto" href="./order">Order</a></li>
+
             <li class="dropdown">
               <a href="#"
                 ><span>Show More</span> <i class="bi bi-chevron-down"></i
               ></a>
               <ul>
+                <li><a href="./codes">Codes</a></li>
                 <li><a href="./connect">SpicyDevs Connect</a></li>
-                <li><a href="./discord" target="_blank">Discord</a></li>
+                <li>
+                  <a href="./discord" target="_blank">Discord</a>
+                </li>
               </ul>
             </li>
-            <li><a class="nav-link scrollto" href="../#contact">Contact</a></li>
+            <li><a class="nav-link scrollto" href="./#contact">Contact</a></li>
           </ul>
           <i class="bi bi-list mobile-nav-toggle"></i>
         </nav>
-        <!-- .navbar -->
       </div>
     </header>
     <!-- End Header -->
-    <section id="aboutsd" class="about section-bg">
+
+    <!-- ======= Main ======= -->
+    <section id="rule" class="rule">
       <div class="container" data-aos="fade-up">
         <div class="section-title">
-          <h2>About</h2>
-          <h3>Find Out More <span>About Us</span></h3>
+          <h2>rule</h2>
+          <h3>SpicyDevs Server - <span>Rules</span></h3>
           <p>SpicyDevs - Spice it Up</p>
         </div>
 
         <div class="row">
-          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
-            <img
-              src="assets/img/spicydevs.png"
-              class="img-fluid"
-              alt=""
-              loading="lazy"
-            />
-          </div>
-          <div
-            class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column justify-content-center"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
-            <h3>SpicyDevs Connect</h3>
-            <p class="fst-italic">
-              In a Nutshell, SpicyDevs Connect is basically a program ran by the
-              SpicyDevs team to connect with everyone through Discord. In this
-              program, we accept partnerships, sponsors and investors and
-              connect with everyone.
-            </p>
-            <ul>
-              <li>
-                <i class="bx bx-world"></i>
-                <div>
-                  <h5>Partners</h5>
-                  <p>
-                    Partners will get some awesome perks and some part of their
-                    equity will be taken by us even if you have an idea and
-                    looking for a team then we are always here to partner with
-                    you..
-                  </p>
-                </div>
-              </li>
-              <li>
-                <i class="bx bxl-dribbble"></i>
-                <div>
-                  <h5>Sponsers</h5>
-                  <p>
-                    Sponsors will also get some awesome perks like promotions
-                    with us and our partners and also get the opportunity to
-                    take their vision at next level with us.
-                  </p>
-                </div>
-              </li>
-              <li>
-                <i class="bx bxs-quote-alt-right"></i>
-                <div>
-                  <h5>Investors</h5>
-                  <p>
-                    Investors can invest directly in our partners and work with
-                    them to take their ideas to next level we also accpet
-                    investors for SpicyDevs and perks will be given to them.
-                  </p>
-                </div>
-              </li>
-            </ul>
-            <p>
-              If you want to order anything or want to know about anything, feel
-              free to visit our official discord server and raise/create a
-              ticket to know more.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End About Section -->
-    <!-- ======= Frequently Asked Questions Section ======= -->
-    <section id="faq" class="faq section-bg">
-      <div class="container" data-aos="fade-up">
-        <div class="section-title">
-          <h2>F.A.Q.</h2>
-          <h3>Frequently Asked <span>Questions</span></h3>
-          <p>You may have a Look at Some Frequently Asked Questions.</p>
-        </div>
-
-        <div class="row justify-content-center">
           <div class="col-xl-10">
-            <ul class="faq-list">
+            <ul class="rule-list">
               <li>
                 <div
                   data-bs-toggle="collapse"
                   class="collapsed question"
-                  href="#faq1"
+                  href="#rule1"
                 >
-                  When I am applying for partnership, what will be the perks and
-                  what should we have to provide SpicyDevs?
+                  Must follow Discord Terms-Of-Service.
                   <i class="bi bi-chevron-down icon-show"></i
                   ><i class="bi bi-chevron-up icon-close"></i>
                 </div>
-                <div id="faq1" class="collapse" data-bs-parent=".faq-list">
+                <div id="rule1" class="collapse" data-bs-parent=".rule-list">
                   <p>
-                    SpicyDevs will provide you its all services at a discount of
-                    75-90% and we will take some equity in your brand for
-                    security reasons and we will help you in growth, help to
-                    find investors, sponsers etc.
+                    You must follow the
+                    <a href="https://discord.com/terms">Discord Terms</a>. While
+                    communicating in our Server.
                   </p>
                 </div>
               </li>
@@ -226,55 +211,20 @@
               <li>
                 <div
                   data-bs-toggle="collapse"
-                  href="#faq2"
+                  href="#rule2"
                   class="collapsed question"
                 >
-                  What perks will I get as a sponsor and what should I have to
-                  do? <i class="bi bi-chevron-down icon-show"></i
-                  ><i class="bi bi-chevron-up icon-close"></i>
-                </div>
-                <div id="faq2" class="collapse" data-bs-parent=".faq-list">
-                  <p>
-                    We and our partners will promote you and you will also get a
-                    flat 25% discount in our all services you just have to
-                    sponsers us with money minimum amount is 5$.
-                  </p>
-                </div>
-              </li>
-
-              <li>
-                <div
-                  data-bs-toggle="collapse"
-                  href="#faq3"
-                  class="collapsed question"
-                >
-                  What perks will I be getting as an investor and what will my
-                  work be? <i class="bi bi-chevron-down icon-show"></i
-                  ><i class="bi bi-chevron-up icon-close"></i>
-                </div>
-                <div id="faq3" class="collapse" data-bs-parent=".faq-list">
-                  <p>
-                    You just have to invest some money and you will get % of
-                    equity equal to that as per valuation you can invest in any
-                    idea that is available at SpicyDevs connect.
-                  </p>
-                </div>
-              </li>
-
-              <li>
-                <div
-                  data-bs-toggle="collapse"
-                  href="#faq4"
-                  class="collapsed question"
-                >
-                  How can I apply for partnership | sponsor | investor?
+                  Spamming in Chat/Ticket or Spam Pinging other Members/Staffs.
                   <i class="bi bi-chevron-down icon-show"></i
                   ><i class="bi bi-chevron-up icon-close"></i>
                 </div>
-                <div id="faq4" class="collapse" data-bs-parent=".faq-list">
+                <div id="rule2" class="collapse" data-bs-parent=".rule-list">
                   <p>
-                    Just fill the form given below or visit our official server
-                    and create a ticket in the SpicyDevs connect section.
+                    If we find you Spamming reactions, messages, emotes, walls
+                    of text, zalgo text, newlines, and pings in chat is
+                    prohibited. Spamming new posts in form channels, or spamming
+                    tickets. If you are caught doing the following, SpicyDevs
+                    has the right to punish you with mute/kick/ban.
                   </p>
                 </div>
               </li>
@@ -282,37 +232,153 @@
               <li>
                 <div
                   data-bs-toggle="collapse"
-                  href="#faq5"
+                  href="#rule3"
                   class="collapsed question"
                 >
-                  How can I know more about this?
+                  No Malicious content or Scamming
                   <i class="bi bi-chevron-down icon-show"></i
                   ><i class="bi bi-chevron-up icon-close"></i>
                 </div>
-                <div id="faq5" class="collapse" data-bs-parent=".faq-list">
+                <div id="rule3" class="collapse" data-bs-parent=".rule-list">
                   <p>
-                    Join our
-                    <a href="./discord" target="_blank">Discord Server</a> and
-                    raise/create a ticket and our staff team will be providing
-                    you with more info.
+                    Sending viruses and also sending IP grabing links are
+                    strictly prohibited. Any link that is sent intentionally to
+                    record IP addresses will result in punishment. This also
+                    includes hosting your own website and asking “who’s
+                    xxx.xxx.xxx?” while sending someone’s IP. Don’t use Discord
+                    to scam or send malware / viruses
                   </p>
                 </div>
               </li>
 
-              <!-- <li>
-              <div data-bs-toggle="collapse" href="#faq6" class="collapsed question">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
-              <div id="faq6" class="collapse" data-bs-parent=".faq-list">
-                <p>
-                  Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Nibh tellus molestie nunc non blandit massa enim nec.
-                </p>
-              </div>
-            </li> -->
+              <li>
+                <div
+                  data-bs-toggle="collapse"
+                  href="#rule4"
+                  class="collapsed question"
+                >
+                  Leaking Private Information.
+                  <i class="bi bi-chevron-down icon-show"></i
+                  ><i class="bi bi-chevron-up icon-close"></i>
+                </div>
+                <div id="rule4" class="collapse" data-bs-parent=".rule-list">
+                  <p>
+                    We do not allow any personal information to be sent into the
+                    server. This will include: IPs, Addresses, Phone numbers,
+                    Legal names, as well any other identifiable information. Any
+                    private information regarding an user without their consent
+                    may lead to ban.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div
+                  data-bs-toggle="collapse"
+                  href="#rule5"
+                  class="collapsed question"
+                >
+                  No NSFW Content / Gore / Being Horny
+                  <i class="bi bi-chevron-down icon-show"></i
+                  ><i class="bi bi-chevron-up icon-close"></i>
+                </div>
+                <div id="rule5" class="collapse" data-bs-parent=".rule-list">
+                  <p>
+                    Do not share any NSFW content, sites, or any other messages
+                    related to NSFW. Don’t talk about sex (or any other sexual
+                    activity), genitals, kinks, fanfiction, or any other content
+                    meant to inflict arousal will lead to moderation. No NSFL or
+                    gore content Videos or content that is NSFL (not safe for
+                    life, or things that nobody wants to see), or discussion
+                    about these topics, is strictly prohibited.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div
+                  data-bs-toggle="collapse"
+                  href="#rule6"
+                  class="collapsed question"
+                >
+                  No Advertising.
+                  <i class="bi bi-chevron-down icon-show"></i
+                  ><i class="bi bi-chevron-up icon-close"></i>
+                </div>
+                <div id="rule6" class="collapse" data-bs-parent=".rule-list">
+                  <p>
+                    Sending an invite link, telling people to join your server,
+                    intentionally pointing to your status or about me that
+                    contains an advertisement is strictly prohibited. We do not
+                    allow advertising on this server. Advertising also includes
+                    other websites, or any other links.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div
+                  data-bs-toggle="collapse"
+                  href="#rule7"
+                  class="collapsed question"
+                >
+                  Your Discord Profile must adhere to our rules
+                  <i class="bi bi-chevron-down icon-show"></i
+                  ><i class="bi bi-chevron-up icon-close"></i>
+                </div>
+                <div id="rule7" class="collapse" data-bs-parent=".rule-list">
+                  <p>
+                    Any NSFW, racist, hate speech, sexist, or malicious content
+                    on your profile will result in you being punished. This
+                    includes your: name, bio, and your pronouns. Impersonation
+                    of any staff members or No Text To Speech for malicious
+                    reasons or as a joke will result in you being punished.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div
+                  data-bs-toggle="collapse"
+                  href="#rule8"
+                  class="collapsed question"
+                >
+                  Be Respectful to All Members
+                  <i class="bi bi-chevron-down icon-show"></i
+                  ><i class="bi bi-chevron-up icon-close"></i>
+                </div>
+                <div id="rule8" class="collapse" data-bs-parent=".rule-list">
+                  <p>
+                    Don’t troll, be toxic, cause arguments, or be rude to
+                    members. And also don’t be racist, sexist, send death
+                    threats, or engage in hate speech
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div
+                  data-bs-toggle="collapse"
+                  href="#rule9"
+                  class="collapsed question"
+                >
+                  Don’t Find Loopholes in the Rules
+                  <i class="bi bi-chevron-down icon-show"></i
+                  ><i class="bi bi-chevron-up icon-close"></i>
+                </div>
+                <div id="rule9" class="collapse" data-bs-parent=".rule-list">
+                  <p>
+                    No rules list is completely cohesive. If you feel like
+                    you’ve been treated unfairly by a moderator, please report
+                    it to an admin. If you feel like you’ve been treated
+                    unfairly by and admin, DM @aayu5h, or @fake.dark.dev. If you
+                    intentionally are finding loopholes or misreporting abuse to
+                    staff, you will be punished accordingly.
+                  </p>
+                </div>
+              </li>
             </ul>
           </div>
         </div>
       </div>
     </section>
-    <!-- End Frequently Asked Questions Section -->
+
+    <!-- End #main -->
 
     <!-- ======= Footer ======= -->
     <footer id="footer">
@@ -326,7 +392,7 @@
                 <a href="mailto:hello@spicy.is-a.dev">hello@spicy.is-a.dev</a>
                 <br />
                 <strong>Discord:</strong>
-                <a href="./discord" target="_blank">@aayu5h</a>
+                <a href="./discord" target="_blank">SpicyDevs Server</a>
                 <br />
               </p>
             </div>
@@ -335,8 +401,7 @@
               <h4>Useful Links</h4>
               <ul>
                 <li>
-                  <i class="bx bx-chevron-right"></i>
-                  <a href="./#hero">Home</a>
+                  <i class="bx bx-chevron-right"></i> <a href="./#hero">Home</a>
                 </li>
                 <li>
                   <i class="bx bx-chevron-right"></i>
@@ -348,11 +413,11 @@
                 </li>
                 <li>
                   <i class="bx bx-chevron-right"></i>
-                  <a href="./tos.html">Terms of service</a>
+                  <a href="./tos">Terms of Service</a>
                 </li>
                 <li>
                   <i class="bx bx-chevron-right"></i>
-                  <a href="./privacypolicy.html">Privacy policy</a>
+                  <a href="./privacypolicy">Privacy Policy</a>
                 </li>
               </ul>
             </div>
@@ -386,8 +451,8 @@
             <div class="col-lg-3 col-md-6 footer-links">
               <h4>Our Social Networks</h4>
               <p>
-                Follow us on the following social media network to stay
-                connected with us.
+                Follow us on the following Social Media Platforms to Stay
+                Connected with Us.
               </p>
               <div class="social-links mt-3">
                 <a href="./discord" class="discord" target="_blank"
@@ -410,7 +475,7 @@
 
     <div id="preloader"></div>
     <a
-      href="../connect.html"
+      href="#"
       class="back-to-top d-flex align-items-center justify-content-center"
       ><i class="bi bi-arrow-up-short"></i
     ></a>

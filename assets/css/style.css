@@ -645,7 +645,7 @@ section {
   position: relative;
   overflow: hidden;
   background: #fff;
-  box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
+  box-shadow: 0 0 29px 0 rgb(16 110 234 / 25%);
   transition: all 0.3s ease-in-out;
   border-radius: 8px;
   z-index: 1;
@@ -785,7 +785,7 @@ section {
 
 .about .content ul i {
   background: #fff;
-  box-shadow: 0px 6px 15px rgba(16, 110, 234, 0.12);
+  box-shadow: 0px 6px 15px rgb(16 110 234 / 25%);
   font-size: 24px;
   padding: 20px;
   margin-right: 15px;
@@ -893,7 +893,7 @@ section {
 
 .services .icon-box:hover {
   border-color: #fff;
-  box-shadow: 0px 0 25px 0 rgba(16, 110, 234, 0.1);
+  box-shadow: 0px 0 25px 0 rgb(16 110 234 / 25%);
 }
 
 .services .icon-box:hover h4 a,
@@ -1009,7 +1009,7 @@ section {
   overflow: hidden;
   border-radius: 4px;
   background: #fff;
-  box-shadow: 0px 2px 15px rgba(16, 110, 234, 0.15);
+  box-shadow: 0px 2px 15px rgb(16 110 234 / 25%);
 }
 
 .team .member .member-img {
@@ -1264,8 +1264,9 @@ section {
 .contact .info-box {
   color: #444444;
   text-align: center;
-  box-shadow: 0 0 30px rgba(214, 215, 216, 0.3);
+  box-shadow: 0 0 30px rgb(16 110 234 / 25%);
   padding: 20px 0px 30px 0px;
+  border-radius: 2%;
 }
 
 .contact .info-box i {
@@ -1291,7 +1292,7 @@ section {
 }
 
 .contact .php-email-form {
-  box-shadow: 0 0 30px rgba(214, 215, 216, 0.4);
+  box-shadow: 0 0 30px rgb(16 110 234 / 25%);
   padding: 30px;
   margin-top: 25px;
 }
@@ -1529,6 +1530,7 @@ section {
 --------------------------------------------------------------*/
 .portfolio .portfolio-item {
   margin-bottom: 30px;
+  cursor: pointer;
 }
 
 .portfolio #portfolio-flters {
@@ -1573,6 +1575,10 @@ section {
   margin-bottom: 20px;
   border-radius: 10px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.4);
+}
+
+.portfolio .portfolio-wrap:hover {
+  box-shadow: 0px 0 25px 0 rgb(16, 110, 234);
 }
 
 /*.portfolio .portfolio-wrap::before {
